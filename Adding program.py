@@ -1,5 +1,14 @@
 import tkinter as tk
 
+def retrieve_vardata():
+
+    number1 = entry1.get()
+    print(number1)
+
+    number2 = entry2.get()
+    print(number2)
+    print(f'sum of {number1} and {number2} is {number1 + number2}')
+
 root = tk.Tk()
 
 root.title("adding number")
@@ -13,9 +22,7 @@ entry2 = tk.Entry(root)
 entry1.grid(row=0, column= 1)
 entry2.grid(row=1, column= 1)
 
-button = tk.Button(root, text = "Submit", command= root.destroy)
-button.grid(row=4, column=0)
+button = tk.Button(root, text = "Submit", command= retrieve_vardata)
+button.grid(row=4, column=1)
 
 root.mainloop()
-print(entry1.get)
-print(entry2.get)
