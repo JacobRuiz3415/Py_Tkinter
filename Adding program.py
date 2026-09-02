@@ -13,6 +13,7 @@ root = tk.Tk()
 
 root.title("Adding Numbers")
 
+#input numbers
 tk.Label(root, text="First Number:").grid(row= 0, column= 0)
 tk.Label(root, text="Second Number:").grid(row= 1, column= 0)
 
