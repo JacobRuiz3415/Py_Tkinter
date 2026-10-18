@@ -12,7 +12,7 @@ def paint(event):
 
     w.create_line(x1, y1, x2, y2, fill=color)
 
-w = Canvas(root, width=500, height=500)
+w = Canvas(root, width=400, height=250)
 
 w.bind("<B1-Motion>" , paint)
 
